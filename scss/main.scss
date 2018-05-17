@@ -370,9 +370,14 @@ $letter-spacing: 0px;
 	/* ==========================================================================
    3. Hero Area
    ========================================================================== */
+   .no-webp #hero-area{
+     background: url(../img/hero-area.jpg) fixed no-repeat;
+   }
+   .webp #hero-area{
+     background: url(../img/hero-area.webp) fixed no-repeat;
+   }
+
 	#hero-area{
-    background: url(../img/hero-area.jpg) fixed no-repeat;
-		background-size: cover;
     background-color: #555;
 		color: #fff;
 		overflow: hidden;

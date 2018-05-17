@@ -393,9 +393,15 @@ transition: all 0.2s linear;
 /* ==========================================================================
  3. Hero Area
  ========================================================================== */
-#hero-area {
+.no-webp #hero-area {
 background: url(../img/hero-area.jpg) fixed no-repeat;
-background-size: cover;
+}
+
+.webp #hero-area {
+background: url(../img/hero-area.webp) fixed no-repeat;
+}
+
+#hero-area {
 background-color: #555;
 color: #fff;
 overflow: hidden;
