@@ -31,7 +31,7 @@
   }
 
   .meta-tags span i {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   #blog .blog-item-text h3 {
@@ -41,12 +41,16 @@
 }
 /* mobile or only mobile */
 @media (max-width: 767px) {
-  .section-header .section-title {
-    font-size: 20px;
+  .no-webp #hero-area {
+    background: url("../img/hero-area-small.jpg") fixed no-repeat;
   }
 
-  #hero-area {
-    background: url(../img/hero-area-small.jpg) fixed no-repeat;
+  .webp #hero-area {
+    background: url("../img/hero-area-small.webp") fixed no-repeat;
+  }
+
+  .section-header .section-title {
+    font-size: 20px;
   }
 
   #hero-area .contents {
@@ -67,11 +71,11 @@
   }
 
   .controls {
-    margin: 0px;
+    margin: 0;
   }
   .controls .btn {
     font-size: 13px;
-    padding: 7px 7px;
+    padding: 7px;
   }
 
   .video-promo .video-promo-content h2 {
@@ -139,7 +143,7 @@
   }
 
   .meta-tags span i {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   #blog .blog-item-text h3 {
@@ -149,12 +153,16 @@
 }
 /* mobile or only mobile */
 @media (max-width: 767px) {
-  .section-header .section-title {
-    font-size: 20px;
+  .no-webp #hero-area {
+    background: url("../img/hero-area-small.jpg") fixed no-repeat;
   }
 
-  #hero-area {
-    background: url(../img/hero-area-small.jpg) fixed no-repeat;
+  .webp #hero-area {
+    background: url("../img/hero-area-small.webp") fixed no-repeat;
+  }
+
+  .section-header .section-title {
+    font-size: 20px;
   }
 
   #hero-area .contents {
@@ -175,11 +183,11 @@
   }
 
   .controls {
-    margin: 0px;
+    margin: 0;
   }
   .controls .btn {
     font-size: 13px;
-    padding: 7px 7px;
+    padding: 7px;
   }
 
   .video-promo .video-promo-content h2 {
