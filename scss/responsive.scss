@@ -1,7 +1,7 @@
 
 /* only small desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-    
+
 }
 
 /* tablets */
@@ -46,6 +46,9 @@
 @media (max-width: 767px) {
     .section-header .section-title{
         font-size: 20px;
+    }
+    #hero-area {
+        background: url(../img/hero-area-small.jpg) fixed no-repeat;
     }
     #hero-area .contents{
         padding: 100px 0 80px;
