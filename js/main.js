@@ -4,7 +4,7 @@
 
   // Sticky Nav
     $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 200) {
+        if ($(window).scrollTop() > 130) {
             $('.scrolling-navbar').addClass('top-nav-collapse');
         } else {
             $('.scrolling-navbar').removeClass('top-nav-collapse');
