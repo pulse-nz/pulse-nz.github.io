@@ -3,14 +3,11 @@ $primary-font: 'Poppins', sans-serif;
 $regular: 400;
 $medium: 500;
 $bold: 700;
-$letter-spacing: 0;
-// Colours
+$letter-spacing: 0; // Colours
 $pulse-blue: #00b4eb;
-$pulse-blue-drack: #006685;
-//Current Preset Declareation
+$pulse-blue-drack: #006685; //Current Preset Declareation
 $preset: $pulse-blue;
-$preset-drack: $pulse-blue-drack;
-/*
+$preset-drack: $pulse-blue-drack; /*
 * Mate - Bootstrap 4 Template
 * Build Date: December 2017
 * Last updated: December 2017
@@ -50,6 +47,7 @@ $preset-drack: $pulse-blue-drack;
 /* ==========================================================================
    2. GENERAL
    ========================================================================== */
+
 body {
   font-family: 'Poppins', sans-serif;
   color: #333;
@@ -117,6 +115,7 @@ a:not([href]):not([tabindex]):hover {
 /* ==========================================================================
    2.1 Section Title
    ========================================================================== */
+
 .section {
   padding: 80px 0;
 }
@@ -157,6 +156,7 @@ a:not([href]):not([tabindex]):hover {
 /* ==========================================================================
    2.2 Buttons
    ========================================================================== */
+
 .btn {
   font-size: 14px;
   padding: 11px 40px;
@@ -235,6 +235,7 @@ button:focus {
 /* ==========================================================================
    2.3 Social Iocns
    ========================================================================== */
+
 .social-icons {
   margin-top: 40px;
 }
@@ -332,6 +333,7 @@ button:focus {
 /* ==========================================================================
 	 2.4  Pre Loader
 	 ========================================================================== */
+
 #loader {
   position: fixed;
   top: 0;
@@ -393,6 +395,7 @@ button:focus {
 /* ==========================================================================
   -2.5 Scroll To Up
    ========================================================================== */
+
 .back-to-top {
   display: none;
   position: fixed;
@@ -418,16 +421,19 @@ button:focus {
 /* ==========================================================================
    3. Hero Area
    ========================================================================== */
+
 .no-webp #hero-area {
-  background: url("../img/hero-area.jpg") fixed no-repeat;
+  background-image: url("../img/hero-area.jpg");
 }
 
 .webp #hero-area {
-  background: url("../img/hero-area.webp") fixed no-repeat;
+  background-image: url("../img/hero-area.webp");
 }
 
 #hero-area {
   background-color: #555;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
   color: #fff;
   overflow: hidden;
   position: relative;
@@ -486,6 +492,7 @@ button:focus {
 /* ==========================================================================
    4. Navbar Style
    ========================================================================== */
+
 .navbar-brand {
   position: relative;
   padding: 0;
@@ -570,6 +577,7 @@ button:focus {
   display: none;
 }
 // Mobile Menu
+
 .mobile-menu {
   display: none;
 }
@@ -619,6 +627,7 @@ button:focus {
 /* ==========================================================================
   5. Services section
    ========================================================================== */
+
 .item-boxes {
   text-align: center;
   padding: 0 15px;
@@ -663,14 +672,19 @@ button:focus {
 /* ==========================================================================
   6. Features Section Style
    ========================================================================== */
+
 .no-webp #features {
-  background: url("../img/bg1.jpg") fixed no-repeat;
+  background-image: url("../img/bg1.jpg");
 }
+
 .webp #features {
-  background: url("../img/bg1.webp") fixed no-repeat;
+  background-image: url("../img/bg1.webp");
 }
+
 #features {
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #fff;
   overflow: hidden;
   position: relative;
@@ -754,8 +768,18 @@ button:focus {
 /* ==========================================================================
   7. Video promo Style
    ========================================================================== */
+.no-webp .video-promo {
+  background-image: url("../img/bg1.jpg");
+}
+
+.webp .video-promo {
+  background-image: url("../img/bg1.webp");
+}
+
 .video-promo {
-  background: $preset;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #fff;
   overflow: hidden;
   position: relative;
@@ -807,6 +831,7 @@ button:focus {
 /* ==========================================================================
   8. Portfolio Section
    ========================================================================== */
+
 #portfolios {
   .mix {
     padding: 10px;
@@ -914,6 +939,7 @@ button:focus {
 /* ==========================================================================
 	9. Pricing Table
 	========================================================================== */
+
 .pricing-table {
   padding: 0 0 40px;
   margin: 0 auto 5px;
@@ -966,6 +992,7 @@ button:focus {
 /* ==========================================================================
  10. Counter Section Style
  ========================================================================== */
+
 .counters {
   /*
     background: url(../img/counter.jpg) fixed;
@@ -1004,15 +1031,18 @@ button:focus {
 /* ==========================================================================
 11. Testimonial Section Style
  ========================================================================== */
+
 .no-webp #testimonial {
-  background: url("../img/testimonial-bg.jpg") fixed no-repeat;
+  background-image: url("../img/testimonial-bg.jpg");
 }
 
 .webp #testimonial {
-  background: url("../img/testimonial-bg.webp") fixed no-repeat;
+  background-image: url("../img/testimonial-bg.webp");
 }
 
 #testimonial {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -1060,6 +1090,7 @@ button:focus {
 /* ==========================================================================
   12. Team Section
    ========================================================================== */
+
 .single-team:hover .team-details {
   opacity: 1;
 }
@@ -1150,6 +1181,7 @@ button:focus {
 /* ==========================================================================
   13. Blog
    ========================================================================== */
+
 #blog {
   .blog-item-wrapper {
     background: #fff;
@@ -1221,6 +1253,7 @@ button:focus {
 /* ==========================================================================
   14. Contact Us
   ========================================================================== */
+
 .contact-us {
   h3 {
     font-size: 36px;
@@ -1281,7 +1314,6 @@ button:focus {
 /* ==========================================================================
 15. Footer Style
  ========================================================================== */
-
 footer {
   background: #292f35;
   padding: 20px 0;

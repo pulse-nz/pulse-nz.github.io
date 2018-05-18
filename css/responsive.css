@@ -42,11 +42,11 @@
 /* mobile or only mobile */
 @media (max-width: 767px) {
   .no-webp #hero-area {
-    background: url("../img/hero-area-small.jpg") fixed no-repeat;
+    background-image: url("../img/hero-area-small.jpg");
   }
 
   .webp #hero-area {
-    background: url("../img/hero-area-small.webp") fixed no-repeat;
+    background-image: url("../img/hero-area-small.webp");
   }
 
   .section-header .section-title {
@@ -154,11 +154,11 @@
 /* mobile or only mobile */
 @media (max-width: 767px) {
   .no-webp #hero-area {
-    background: url("../img/hero-area-small.jpg") fixed no-repeat;
+    background-image: url("../img/hero-area-small.jpg");
   }
 
   .webp #hero-area {
-    background: url("../img/hero-area-small.webp") fixed no-repeat;
+    background-image: url("../img/hero-area-small.webp");
   }
 
   .section-header .section-title {
