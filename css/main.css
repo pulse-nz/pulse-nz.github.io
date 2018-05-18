@@ -635,8 +635,15 @@ button:focus {
 /* ==========================================================================
   6. Features Section Style
    ========================================================================== */
-#features {
+.no-webp #features {
   background: url("../img/bg1.jpg") fixed no-repeat;
+}
+
+.webp #features {
+  background: url("../img/bg1.webp") fixed no-repeat;
+}
+
+#features {
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -938,7 +945,6 @@ button:focus {
 }
 
 #testimonial {
-  background: url("../img/testimonial-bg.jpg") fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
