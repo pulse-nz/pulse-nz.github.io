@@ -43,6 +43,7 @@ function submitForm(){
         200: function() {
             formSuccess();
         }
+      }
     });
 }
 
