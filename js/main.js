@@ -46,6 +46,7 @@
       allowParentLinks: true,
       duplicate: false,
       label: '',
+      closeOnClick: true,
     });
 
 
