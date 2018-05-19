@@ -28,8 +28,7 @@ function submitForm(){
         },
         url: "https://docs.google.com/forms/d/e/1FAIpQLSdNaaFpUiE7CzLKyDJuWmxo0gY93wsY7QOOaeziMIdqoafoGQ/formResponse",
         beforeSend: function (xhr) {
-          xhr.setRequestHeader('Access-Control-Allow-Origin', 'chrome-extension://EXTENSION_ID');
-          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, PUT');
+          xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
         },
         data: {
           "emailAddress": email,
