@@ -36,13 +36,12 @@ function submitForm(){
           "entry.1166974658": phone,
           "entry.839337160" : message
         },
-        success : function(text){
-            if (text == "success"){
-                formSuccess();
-            } else {
-                formError();
-                submitMSG(false,text);
-            }
+        statusCode: {
+        0: function() {
+            formSuccess();
+        },
+        200: function() {
+            formSuccess();
         }
     });
 }
