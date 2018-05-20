@@ -4,8 +4,10 @@
 @media (max-width: 991px) {}
 /* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
-  #hero-area .contents h1 {
-    font-size: 28px;
+  #hero-area .contents {
+    h1 {
+      font-size: 36px;
+    }
   }
 
   .item-boxes h4 {
@@ -17,11 +19,11 @@
   }
 
   .pricing-table .pricing-details ul li {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .counters .facts-item .fact-count h4 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .single-team {
@@ -59,9 +61,14 @@
     padding: 100px 0 80px;
   }
 
-  #hero-area .contents h1 {
-    font-size: 18px;
-    line-height: 30px;
+  #hero-area .contents {
+    h1 {
+      font-size: 38px;
+      line-height: 30px;
+    }
+    p {
+      font-size: 24px;
+    }
   }
 
   #features .show-box img {

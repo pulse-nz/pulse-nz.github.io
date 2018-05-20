@@ -1,5 +1,5 @@
 //All Preset color variables are here
-$primary-font: 'Poppins', sans-serif;
+$primary-font: 'Open+Sans', sans-serif;
 $regular: 400;
 $medium: 500;
 $bold: 700;
@@ -43,15 +43,15 @@ $preset-drack: $pulse-blue-drack; /*
 /* ==========================================================================
    1. IMPORT GOOGLE FONTS
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 /* ==========================================================================
    2. GENERAL
    ========================================================================== */
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open+Sans', sans-serif;
   color: #333;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
   background: #fff;
   overflow-x: hidden;
@@ -62,7 +62,7 @@ html {
 }
 
 p {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 26px;
 }
 
@@ -83,7 +83,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open+Sans', sans-serif;
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -141,7 +141,14 @@ a:not([href]):not([tabindex]):hover {
   .section-subtitle {
     margin-top: 15px;
     color: #333;
-    font-size: 14px;
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .section-note {
+    margin-top: 15px;
+    color: #333;
+    font-size: 24px;
     font-weight: 400;
   }
 
@@ -453,13 +460,13 @@ button:focus {
 
     h1 {
       color: #fff;
-      font-size: 42px;
+      font-size: 56px;
       font-weight: 700;
       margin-bottom: 25px;
     }
 
     p {
-      font-size: 14px;
+      font-size: 24px;
       color: #fff;
       font-weight: 400;
       line-height: 30px;
@@ -941,8 +948,9 @@ button:focus {
 	========================================================================== */
 
 .pricing-table {
-  padding: 0 0 40px;
-  margin: 0 auto 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   border: transparent;
   text-align: center;
   background-color: #FFFFFF;
@@ -975,11 +983,9 @@ button:focus {
     }
 
     ul {
-      margin-bottom: 35px;
-
       li {
         padding: 10px;
-        font-size: 15px;
+        font-size: 24px;
         border-bottom: 1px dotted #f1f1f1;
       }
     }
@@ -1061,17 +1067,17 @@ button:focus {
 
   .testimonial-text {
     h3 {
-      font-size: 15px;
+      font-size: 24px;
       font-weight: 700;
     }
 
     span {
-      font-size: 14px;
+      font-size: 18px;
       color: #999;
     }
 
     p {
-      font-size: 14px;
+      font-size: 24px;
       font-weight: 400;
       padding: 36px 10px 30px;
       margin: 0;
@@ -1101,6 +1107,9 @@ button:focus {
 .single-team:hover .team-inner {}
 
 .single-team {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1119,6 +1128,7 @@ button:focus {
   }
 
   .team-details {
+    flex: 1;
     text-align: center;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -1129,13 +1139,17 @@ button:focus {
 
     .team-title {
       margin-bottom: 5px;
-      font-size: 20px;
+      font-size: 28px;
       font-weight: 700;
       color: #333;
     }
 
-    p {
-      color: #333;
+    ul {
+      li {
+        padding: 10px;
+        font-size: 24px;
+        border-bottom: 1px dotted #f1f1f1;
+      }
     }
   }
 
