@@ -141,7 +141,7 @@ a:not([href]):not([tabindex]):hover {
   .section-subtitle {
     margin-top: 15px;
     color: #333;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 400;
   }
 
@@ -466,6 +466,8 @@ button:focus {
     }
 
     p {
+      display: inline-block;
+      margin: 5px 10px;
       font-size: 24px;
       color: #fff;
       font-weight: 400;
@@ -599,7 +601,7 @@ button:focus {
 
   .navbar-brand {
     position: absolute;
-    padding: 15px;
+    padding: 20px;
     top: 0;
 
     img {
