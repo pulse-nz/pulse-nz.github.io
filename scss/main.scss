@@ -5,7 +5,7 @@ $medium: 500;
 $bold: 700;
 $letter-spacing: 0; // Colours
 $pulse-blue: #00b4eb;
-$pulse-blue-drack: #006685; //Current Preset Declareation
+$pulse-blue-drack: #EBEBEB; //Current Preset Declareation
 $preset: $pulse-blue;
 $preset-drack: $pulse-blue-drack; /*
 * Mate - Bootstrap 4 Template
@@ -198,7 +198,7 @@ a:not([href]):not([tabindex]):hover {
   border-radius: 30px;
 
   &:hover {
-    color: #fff;
+    color: #005470;
     background: $preset-drack;
     border-color: $preset-drack;
     transition: all 0.50s ease-in-out;
@@ -938,11 +938,8 @@ button:focus {
   transition: all 0.5s ease-in-out;
   border: 1px solid $preset;
   border-radius: 50%;
-
-  &:hover {
-    background: $preset;
-    color: #fff;
-  }
+  background: $preset;
+  color: #fff;
 }
 
 .shot-item:hover .item-icon {
