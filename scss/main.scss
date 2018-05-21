@@ -43,6 +43,10 @@ $preset-drack: $pulse-blue-drack; /*
 /* ==========================================================================
    1. IMPORT GOOGLE FONTS
    ========================================================================== */
+@font-face {
+  font-display: auto;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 /* ==========================================================================
    2. GENERAL
@@ -50,7 +54,6 @@ $preset-drack: $pulse-blue-drack; /*
 
 body {
   font-family: 'Open+Sans', sans-serif;
-  font-display: auto;
   color: #333;
   font-size: 20px;
   font-weight: 400;
