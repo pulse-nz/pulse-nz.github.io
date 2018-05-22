@@ -195,7 +195,6 @@ a:not([href]):not([tabindex]):hover {
   position: relative;
   color: #fff;
   z-index: 1;
-  border-radius: 30px;
 
   &:hover {
     color: #005470;
@@ -204,19 +203,6 @@ a:not([href]):not([tabindex]):hover {
     transition: all 0.50s ease-in-out;
     -moz-transition: all 0.50s ease-in-out;
     -webkit-transition: all 0.50s ease-in-out;
-  }
-}
-
-.btn-border {
-  color: #fff;
-  background-color: transparent;
-  border: 2px solid #fff;
-  border-radius: 4px;
-
-  &:hover {
-    border: 2px solid #fff;
-    color: #fff;
-    background-color: $preset;
   }
 }
 
@@ -540,7 +526,7 @@ button:focus {
   }
 
   .navbar-nav .nav-link.active {
-    color: #fff!important;
+    color: $preset!important;
   }
 }
 
@@ -550,7 +536,6 @@ button:focus {
   margin-top: 20px;
   margin-bottom: 20px;
   line-height: 40px;
-  border-radius: 30px;
   background: transparent;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -558,14 +543,13 @@ button:focus {
 }
 
 .navbar-expand-lg .navbar-nav li .active > a,
-.navbar-expand-lg .navbar-nav li a:focus,
+//.navbar-expand-lg .navbar-nav li a:focus,
 .navbar-expand-lg .navbar-nav li a:hover {
   color: $preset;
 }
 
 .navbar .nav-link.active {
-  color: #fff!important;
-  background: $preset;
+  color: $preset!important;
 }
 
 .dropdown-toggle::after {
