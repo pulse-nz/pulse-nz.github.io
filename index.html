@@ -147,7 +147,7 @@
               <i class="fa fa-bullhorn"></i>
             </div>
             <h4>Personal Training</h4>
-            <p>Specialised coaching focused on pre-postnatal women, and men & women with pelvic floor issues.  From a qualified pre/post natal coach.</p>
+            <p>Specialised coaching focused on pre-postnatal women, and men & women with pelvic floor issues. From a qualified pre/post natal coach.</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
@@ -223,7 +223,7 @@
   <!-- Portfolio Section -->
   <section id="portfolios" class="section">
     <!-- Container Starts -->
-    <div class="container">
+    <div class="container" id="portfolio-container">
       <div class="section-header">
         <h2 class="section-title">Gallery</h2>
         <hr class="lines">
@@ -233,16 +233,16 @@
         <div class="col-md-12">
           <!-- Portfolio Controller/Buttons -->
           <div class="controls text-center">
-            <a class="filter active btn btn-common" data-filter="all">
+            <a class="filter-portfolio active btn btn-common" data-filter="all">
                 All
               </a>
-            <a class="filter btn btn-common" data-filter=".tkd">
+            <a class="filter-portfolio btn btn-common" data-filter=".tkd">
                 Taekwon-Do
               </a>
-            <a class="filter btn btn-common" data-filter=".personal">
+            <a class="filter-portfolio btn btn-common" data-filter=".personal">
                 Personal Training
               </a>
-            <a class="filter btn btn-common" data-filter=".self">
+            <a class="filter-portfolio btn btn-common" data-filter=".self">
                 Self Defence
               </a>
           </div>
@@ -352,71 +352,93 @@
             <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Pulse Taekwon-Do is affiliated to ITKD which has been established for over 40 years and has well over 3500 members and around 100 clubs nationwide. Our youngest start at just 3 years of age and our oldest is over 70!.</p>
             <div style="padding:56.25% 0 0 0;position:relative;"><iframe title="TKD Promo Video" src="https://player.vimeo.com/video/245814163" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
             <script src="https://player.vimeo.com/api/player.js"></script>
-            <p><a href="https://vimeo.com/245814163"  aria-label="TKD Intro Video on vimeo"></a></p>
+            <p><a href="https://vimeo.com/245814163" aria-label="TKD Intro Video on vimeo"></a></p>
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- End Video Promo Section -->
-
   <!-- Start Pricing Table Section -->
-  <div id="pricing" class="section pricing-section">
-    <div class="container">
+  <div id="pricing">
+    <div class="container" id="pricing-container">
       <div class="section-header">
         <h2 class="section-title">Pricing</h2>
         <hr class="lines">
+      </div>
+      <div class="col-md-12">
+        <!-- Pricing Controller/Buttons -->
+        <div class="controls text-center">
+          <a class="filter-pricing btn btn-common" data-filter=".tkd-price">
+                Taekwon-Do
+              </a>
+          <a class="filter-pricing btn btn-common" data-filter=".personal-price">
+                Personal Training
+              </a>
+          <a class="filter-pricing btn btn-common" data-filter=".self-price">
+                Self Defence
+              </a>
+        </div>
+        <!-- Pricing Controller/Buttons Ends-->
+      </div>
+      <div class="pricing-section mix self-price">
+        self
+      </div>
+      <div class="pricing-section mix personal-price">
+        personal
+      </div>
+      <div class="pricing-section mix tkd-price">
         <p class="section-subtitle">First two weeks free, with no obligation or cost, to see if Taekwon-Do is for you before you pay a cent, so come along and check it out!</p>
-      </div>
 
-      <div class="row pricing-tables">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="pricing-table">
-            <div class="pricing-details">
-              <h2>Individual</h2>
-              <span>$65</span>
-              <ul>
-                <li>Monthly</li>
-                <li>Nunc luctus nulla et tellus</li>
-                <li>Suspendisse quis metus</li>
-                <li>Vestibul varius fermentum erat</li>
-              </ul>
+        <div class="row pricing-tables">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="pricing-table">
+              <div class="pricing-details">
+                <h2>Individual</h2>
+                <span>$65</span>
+                <ul>
+                  <li>Monthly</li>
+                  <li>Nunc luctus nulla et tellus</li>
+                  <li>Suspendisse quis metus</li>
+                  <li>Vestibul varius fermentum erat</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="pricing-table">
-            <div class="pricing-details">
-              <h2>2 Person</h2>
-              <span>$120</span>
-              <ul>
-                <li>Monthly</li>
-                <li>Nunc luctus nulla et tellus</li>
-                <li>Suspendisse quis metus</li>
-                <li>Vestibul varius fermentum erat</li>
-              </ul>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="pricing-table">
+              <div class="pricing-details">
+                <h2>2 Person</h2>
+                <span>$120</span>
+                <ul>
+                  <li>Monthly</li>
+                  <li>Nunc luctus nulla et tellus</li>
+                  <li>Suspendisse quis metus</li>
+                  <li>Vestibul varius fermentum erat</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="pricing-table">
-            <div class="pricing-details">
-              <h2>3 or more</h2>
-              <span>$155</span>
-              <ul>
-                <li>Monthly</li>
-                <li>Ideal for Families</li>
-              </ul>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="pricing-table">
+              <div class="pricing-details">
+                <h2>3 or more</h2>
+                <span>$155</span>
+                <ul>
+                  <li>Monthly</li>
+                  <li>Ideal for Families</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
 
-      </div>
-      <div class="section-header">
-        <p class="section-note">Joining Fee - Individual - $70 - 2 person - $120 - Family - $170</p>
-        <p class="section-note">A $10 discount is also available for holders of a Community Services Card and Tertiary Students</p>
+        </div>
+        <div class="section-header">
+          <p class="section-note">Joining Fee - Individual - $70 - 2 person - $120 - Family - $170</p>
+          <p class="section-note">A $10 discount is also available for holders of a Community Services Card and Tertiary Students</p>
+        </div>
       </div>
     </div>
   </div>
