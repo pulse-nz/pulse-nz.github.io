@@ -46,9 +46,7 @@ $preset-drack: $pulse-blue-drack; /*
 @font-face {
   font-display: auto;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-/* ==========================================================================
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700'); /* ==========================================================================
    2. GENERAL
    ========================================================================== */
 
@@ -115,6 +113,24 @@ a:not([href]):not([tabindex]) {
 a:not([href]):not([tabindex]):focus,
 a:not([href]):not([tabindex]):hover {
   color: $preset;
+}
+// material elevation
+
+.elevation--z1 {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+
+  &:hover {
+    box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2), 0 7px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 16px 1px rgba(0, 0, 0, 0.12);
+  }
+}
+// material card
+
+.card {
+  transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+  display: block;
+  position: relative;
+  padding: 24px;
+  border-radius: 2px;
 }
 /* ==========================================================================
    2.1 Section Title
@@ -541,9 +557,8 @@ button:focus {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.navbar-expand-lg .navbar-nav li .active > a,//.navbar-expand-lg .navbar-nav li a:focus,
 
-.navbar-expand-lg .navbar-nav li .active > a,
-//.navbar-expand-lg .navbar-nav li a:focus,
 .navbar-expand-lg .navbar-nav li a:hover {
   color: $preset;
 }
@@ -841,8 +856,7 @@ button:focus {
   }
 }
 
-#portfolio .mix,
-#pricing .mix {
+#portfolio .mix {
   display: none;
 }
 
@@ -934,6 +948,21 @@ button:focus {
 /* ==========================================================================
 	9. Pricing Table
 	========================================================================== */
+#pricing .mix {
+  display: none;
+}
+
+.pricing-header {
+  margin-bottom: 15px;
+
+  .pricing-subtitle {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+  }
+}
 
 .pricing-table {
   display: flex;
@@ -946,10 +975,6 @@ button:focus {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-
-  &:hover {
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-  }
 
   .pricing-details {
     h2 {
@@ -967,7 +992,6 @@ button:focus {
       font-size: 48px;
       font-weight: 400;
       color: $preset;
-      margin-bottom: 20px;
     }
 
     ul {
@@ -978,6 +1002,10 @@ button:focus {
       }
     }
   }
+}
+
+.pricing-footer {
+  margin-top: 2rem;
 }
 
 .table-left {
