@@ -964,6 +964,10 @@ button:focus {
   }
 }
 
+.price-item {
+  padding: 10px;
+}
+
 .pricing-table {
   display: flex;
   flex-direction: column;
@@ -1006,6 +1010,16 @@ button:focus {
 
 .pricing-footer {
   margin-top: 2rem;
+}
+
+.personal-price {
+  .pricing-table {
+    .pricing-details {
+      span {
+        font-size: 22px;
+      }
+    }
+  }
 }
 
 .table-left {
