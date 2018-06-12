@@ -184,6 +184,47 @@ a:not([href]):not([tabindex]):hover {
    2.2 Buttons
    ========================================================================== */
 
+ // Toogle
+ input[type=checkbox].toogle{
+ 	height: 0;
+ 	width: 0;
+ 	visibility: hidden;
+  &:checked + label {
+  	background: $preset;
+  }
+  &:checked + label:after {
+  	left: calc(100% - 5px);
+  	transform: translateX(-100%);
+  }
+ }
+ label {
+  transform: scale(0.25, 0.25);
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 200px;
+	height: 100px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+
+  &:after {
+  	content: '';
+  	position: absolute;
+  	top: 5px;
+  	left: 5px;
+  	width: 90px;
+  	height: 90px;
+  	background: #fff;
+  	border-radius: 90px;
+  	transition: 0.3s;
+  }
+
+  &:active:after {
+  	width: 130px;
+  }
+}
+
 .btn {
   font-size: 14px;
   padding: 11px 40px;
@@ -981,6 +1022,9 @@ button:focus {
   transition: all 0.3s;
 
   .pricing-details {
+    .price-once {
+      display: none;
+    }
     h2 {
       font-size: 26px;
       font-weight: 700;
