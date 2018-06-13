@@ -185,6 +185,26 @@ a:not([href]):not([tabindex]):hover {
    ========================================================================== */
 
  // Toogle
+ .price-twice, .price-once {
+   // Hide content via default
+    &.hide {
+      display:none !important;
+    }
+ }
+
+ .toogle-container {
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: center;
+   .left {
+     margin-right: 5px;
+   }
+   .right {
+     margin-left: 5px;
+   }
+ }
+
  input[type=checkbox].toogle{
  	height: 0;
  	width: 0;
@@ -193,35 +213,30 @@ a:not([href]):not([tabindex]):hover {
   	background: $preset;
   }
   &:checked + label:after {
-  	left: calc(100% - 5px);
+  	left: calc(100% - 2px);
   	transform: translateX(-100%);
   }
  }
- label {
-  transform: scale(0.25, 0.25);
+ label.toogle {
 	cursor: pointer;
 	text-indent: -9999px;
-	width: 200px;
-	height: 100px;
-	background: grey;
+	width: 50px;
+	height: 26px;
+	background: $preset;
 	display: block;
-	border-radius: 100px;
+	border-radius: 26px;
 	position: relative;
 
   &:after {
   	content: '';
   	position: absolute;
-  	top: 5px;
-  	left: 5px;
-  	width: 90px;
-  	height: 90px;
+  	top: 2px;
+  	left: 2px;
+  	width: 22px;
+  	height: 22px;
   	background: #fff;
-  	border-radius: 90px;
+  	border-radius: 22px;
   	transition: 0.3s;
-  }
-
-  &:active:after {
-  	width: 130px;
   }
 }
 
@@ -1022,9 +1037,6 @@ button:focus {
   transition: all 0.3s;
 
   .pricing-details {
-    .price-once {
-      display: none;
-    }
     h2 {
       font-size: 26px;
       font-weight: 700;

@@ -76,8 +76,8 @@
   $('#tkd-freq-toogle').change(function(event){
     console.log(event);
     var inputValue = $(this).attr("value");
-    $(".price-twice").toggle();
-    $(".price-once").toggle();
+    $(".price-twice").toggleClass('hide');
+    $(".price-once").toggleClass('hide');;
 });
 
   /*
