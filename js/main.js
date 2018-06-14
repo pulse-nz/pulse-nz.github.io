@@ -73,12 +73,22 @@
   $('#pricing-container').mixItUp('filter', '.tkd-price');
 
   // Toogle TKD Frequenct
-  $('#tkd-freq-toogle').change(function(event){
-    console.log(event);
-    var inputValue = $(this).attr("value");
+  var toogleControl = $('#tkd-freq-toogle');
+  var tooglePrice = function(event){
     $(".price-twice").toggleClass('hide');
-    $(".price-once").toggleClass('hide');;
-});
+    $(".price-once").toggleClass('hide');
+  };
+  var setToogle = function(value) {
+    return function() {
+      if(value !== toogleControl.prop( "checked")) {
+        toogleControl.prop( "checked", value ).trigger("change");
+      }
+    };
+  };
+
+  toogleControl.change(tooglePrice);
+  $('.toogle-once').click(setToogle(true));
+  $('.toogle-twice').click(setToogle(false));
 
   /*
      Touch Owl Carousel

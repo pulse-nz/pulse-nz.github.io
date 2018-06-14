@@ -199,9 +199,11 @@ a:not([href]):not([tabindex]):hover {
    justify-content: center;
    .left {
      margin-right: 5px;
+     cursor: pointer;
    }
    .right {
      margin-left: 5px;
+     cursor: pointer;
    }
  }
 
