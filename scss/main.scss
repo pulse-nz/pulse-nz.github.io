@@ -78,6 +78,8 @@ a {
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  color:inherit;
+  text-decoration: none;
 }
 
 h1,
@@ -321,86 +323,125 @@ button:focus {
   display: inline;
 }
 
-.social-icons ul li a {
-  display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 15px;
+.fa {
+  font-size: 30px;
+  width: 50px;
+  line-height: 50px;
   border-radius: 50%;
-  line-height: 40px;
-  width: 40px;
-  height: 40px;
   text-align: center;
-  background: #ddd;
-  font-size: 16px;
+  text-decoration: none;
+  margin: 5px 2px;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
-.social-icons ul li a:hover {
-  color: #fff;
+.fa-facebook {
+  background: #3B5998;
+  color: white !important;
 }
 
-.facebook a {
-  color: #4867AA;
+.fa-twitter {
+  background: #55ACEE;
+  color: white !important;
 }
 
-.facebook a:hover {
-  background: #4867AA;
+.fa-google {
+  background: #dd4b39;
+  color: white !important;
 }
 
-.twitter a {
-  color: #1DA1F2;
+.fa-linkedin {
+  background: #007bb5;
+  color: white !important;
 }
 
-.twitter a:hover {
-  background: #1DA1F2;
+.fa-youtube {
+  background: #bb0000;
+  color: white !important;
 }
 
-.google-plus a {
-  color: #DD4D42;
+.fa-instagram {
+  background: #125688;
+  color: white !important;
 }
 
-.google-plus a:hover {
-  background: #DD4D42;
+.fa-pinterest {
+  background: #cb2027;
+  color: white !important;
 }
 
-.youtube a {
-  color: #DF2926;
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white !important;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.youtube a:hover {
-  background: #DF2926;
+.fa-skype {
+  background: #00aff0;
+  color: white !important;
 }
 
-.linkedin a {
-  color: #007BB6;
+.fa-android {
+  background: #a4c639;
+  color: white !important;
 }
 
-.linkedin a:hover {
-  background: #007BB6;
+.fa-dribbble {
+  background: #ea4c89;
+  color: white !important;
 }
 
-.pinterest a {
-  color: #BD081C;
+.fa-vimeo {
+  background: #45bbff;
+  color: white !important;
 }
 
-.pinterest a:hover {
-  background: #BD081C;
+.fa-tumblr {
+  background: #2c4762;
+  color: white !important;
 }
 
-.dribbble a {
-  color: #EA4C89;
+.fa-vine {
+  background: #00b489;
+  color: white !important;
 }
 
-.dribbble a:hover {
-  background: #EA4C89;
+.fa-foursquare {
+  background: #45bbff;
+  color: white !important;
 }
 
-.behance a {
-  color: #0B7CFF;
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white !important;
 }
 
-.behance a:hover {
-  background: #0B7CFF;
+.fa-flickr {
+  background: #f40083;
+  color: white !important;
 }
+
+.fa-yahoo {
+  background: #430297;
+  color: white !important;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white !important;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white !important;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white !important;
+}
+
 /* ==========================================================================
 	 2.4  Pre Loader
 	 ========================================================================== */
@@ -1356,7 +1397,7 @@ button:focus {
   }
 
   p {
-    span {
+    span, a {
       color: $preset;
       padding-left: 10px;
     }
