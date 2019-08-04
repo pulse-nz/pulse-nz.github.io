@@ -70,25 +70,7 @@
       filter: '.filter-pricing'
     }
   });
-  $('#pricing-container').mixItUp('filter', '.tkd-price');
-
-  // Toogle TKD Frequenct
-  var toogleControl = $('#tkd-freq-toogle');
-  var tooglePrice = function(event){
-    $(".price-twice").toggleClass('hide');
-    $(".price-once").toggleClass('hide');
-  };
-  var setToogle = function(value) {
-    return function() {
-      if(value !== toogleControl.prop( "checked")) {
-        toogleControl.prop( "checked", value ).trigger("change");
-      }
-    };
-  };
-
-  toogleControl.change(tooglePrice);
-  $('.toogle-once').click(setToogle(true));
-  $('.toogle-twice').click(setToogle(false));
+  $('#pricing-container').mixItUp('filter', '.personal-price');
 
   /*
      Touch Owl Carousel
